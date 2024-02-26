@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.card-gradient{
+    border-radius: 38px;
+    background: radial-gradient(114.31% 111.01% at -6.68% 59.11%,
+    rgba(119, 11, 208, 0.861) 0%, rgba(205, 160, 175, 0.879) 100%
+    );
+}

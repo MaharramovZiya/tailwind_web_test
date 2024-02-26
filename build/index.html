@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link type="image/png" sizes="96x96" rel="icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body class="min-h-screen bg-white">
+    <header class="bg-white  text-gray-800 top-0 sticky z-10">
+        <section class="w-5/6 mx-auto flex justify-between items-center p-5">
+            <h1 class="text-xl font-bold">
+                <a href="#hero" class="flex gap-3">
+                    <img src="./img/logo.png" alt="" class="w-8"> Zech Tech
+                </a>
+            </h1>
+            <div>
+                <button class="text-3xl sm:hidden">
+                    &#9776
+                </button>
+                <nav class="hidden sm:block text-lg space-x-10">
+                    <a href="#benefits" class="hover:text-indigo-700 transition duration-300">Benefits</a>
+                    <a href="#ourcustomers" class="hover:text-indigo-700 transition duration-300">Our Customers</a>
+                    <a href="#contactus" class="hover:text-indigo-700 transition duration-300">Contact Us</a>
+                </nav>
+            </div>
+
+        </section>
+    </header>
+    <main class="w-5/6 mx-auto my-24">
+        <section id="hero" class="flex lg:flex-row flex-col-reverse justify-center gap-20">
+            <div class=" flex flex-col text-gray-900">
+                <h1 class="font-semibold text-5xl leading-tight ">
+                    Let's Learn <br/> <span class="font-extrabold bg-gradient-to-r from-gradient-100 bg-gradient-300 text-transparent bg-clip-text">Flutter Developement <br></span>
+                    Together on <span class="font-bold bg-gradient-to-b from-gradient-300 bg-gradient-400 text-transparent bg-clip-text">Udemy</span>
+                </h1>
+                <p class="text-gray-600 mt-6">
+                    The main reason why this course was built is help you
+                    <br class="hidden lg:block">
+                    to achive your goal by using Flutter
+                    
+                </p>
+                <button class="text-xs  bg-gradient-to-r from-purple-800 bg-black hover:bg-blue-800 transition duration-400 font-bold text-white mt-3 rounded-sm p-3 flex-aut w-2/6">Take Course</button>
+
+            </div>
+            <img src="./img/hero.png" alt="hero image" width="500">
+        </section>
+        <section id="benefits" class="flex flex-col items-center justify-center">
+            <h1 class="text-gray-900 text-4xl font-bold my-20">BENEFITS</h1>
+            <div class="flex flex-col gap-y-6 sm:flex-row text-gray-900 text-center items-center gap-x-20">
+               
+                <div class="flex flex-col items-center gap-y-4 text-white card-gradient px-16 py-8">
+                    <img src="./img/2_benefit.png" class="w-16" alt="">
+                    <p>Responsive <br>Design </p>
+                </div>
+                <div class="flex flex-col items-center gap-y-4 text-white card-gradient px-16 py-8">
+                    <img src="./img/3_benefit.png" class="w-16" alt="">
+                    <p>Completly <br> Free</p>
+                </div>
+                <div class="flex flex-col items-center gap-y-4 text-white card-gradient px-16 py-8">
+                    <img src="./img/1_benefit.png" class="w-16" alt="">
+                    <p>7/24 <br> Support</p>
+                </div>
+            </div>
+        </section>
+        <section id="ourcustomers" class="flex flex-col text-gray-900 relative font-serif ourcustomers">
+            <h1 class="text-4xl font-bold my-20 text-center">OUR CUSTOMERS</h1>
+            <p class="text-lg font-light m-10">
+                Flutter is used for building cross-platform applications.   
+                Since it operates within a single codebase and renders into native code on each platform, <br class="lg:block hidden"> Flutter engineers can create native-like applications
+                faster and with lower development costs. Flutter apps comply with iOS, Android, Windows, <br class="lg:block hidden"> MacOS and other platforms.
+            </p>
+            <p class="text-lg f m-auto italic text-right font-bold sm:mr-20">
+                -Waverley Software
+            </p>
+            <p class="text-lg font-light m-10 before:hidden lg:before:block before:absolute before:content-test100 before:bottm-2 before:-bottom-10 before:right-0 mt-20">
+                Flutter is the open-source framework created  
+                by Google for building smooth and scalable cross-platform
+                 applications. Its codebase is platform-agnostic and helps 
+                 developers build high-performance applications with functional and attractive user 
+                interfaces that rival Android and iOS native programs.
+            </p>
+            <p class="text-lg f m-auto italic text-right font-bold sm:mr-20">
+                -Netguru
+            </p>
+        </section>
+        <section id="contactus" class="  w-5/6 mx-auto flex flex-col ">
+            <h1 class="text-4xl font-bold my-20 text-center">CONTACT US</h1>
+           <h2 class="text-2xl">Your Name</h2>
+           <input type="text" checked  id="name" name="name" class="my-6 w-full focus:outline-none sm:w-2/3 text-primary-500 text-lg sm:text-xl shadow rounded-lg py-2 pl-4"  required minlength="2" maxlength="40" placeholder="Please type your name" name="" id="">
+            <h2 class="text-2xl mt-6 sm:mt-10 mb-6">Your Message</h2>
+            <textarea class="w-full  shadow-xl   sm:w-2/3 text-primary-500 rounded-lg focus:outline-none text-lg sm:text-xl pl-4 pt-2" name="textarea" id="textarea" cols="30" placeholder="Please type your message..." rows="10"></textarea>
+            <button class=" mt-4 text-xs font-bold bg-primary-100 w-fit p-5 rounded-lg text-white">SEND</button>
+
+        </section>
+    </main>
+    <footer class="shadow-lg text-gray-900 ">
+        <div class="flex flex-row items-center w-5/6  mx-auto py-6 gap-x-12">
+            <div class="flex flex-col gap-4 sm:basis-1/3 items-center ">
+                <div class="flex gap-2 items-center">
+                    <img width="60" src="./img/logo.png" alt="Web logo">
+                <p class="font-bold text-lg">Zech Tech</p>
+                </div>
+            <p>Learn Coding with Flutter</p>
+            <div class="flex gap-6">
+                <div class="border-white border rounded-full p-2">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="border-white border rounded-full p-2">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="border-white border rounded-full p-2">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class=" hidden sm:flex flex-row sm:basis-2/3 items-start justify-between">
+            <div class="flex flex-col gap-2">
+                <h1 class="text-xl font-semibold">Resources</h1>
+                <p class="text-sm">Dowloand</p>
+                <p class="text-sm">Help Center</p>
+                <p class="text-sm">Guide Lesson</p>
+                <p class="text-sm">App Directory</p>
+
+            </div>
+            <div class="flex flex-col gap-2">
+                <h1 class="text-xl font-semibold">Language</h1>
+                <p class="text-sm">My Languages</p>
+                <p class="text-sm">Beginner</p>
+                <p class="text-sm">Middle</p>
+                <p class="text-sm">Custom Stories</p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <h1 class="text-xl font-semibold">Course</h1>
+                <p class="text-sm">Classes</p>
+                <p class="text-sm">About us</p>
+                <p class="text-sm">Employees</p>
+                <p class="text-sm">Information</p>
+            </div>
+            <div class="hidden lg:flex flex-col gap-2">
+                <h1 class="text-xl font-semibold">Get App</h1>
+                <p class="text-sm">App Store</p>
+                <p class="text-sm">Google Play Store</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
